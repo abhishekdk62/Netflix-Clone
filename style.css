@@ -477,7 +477,7 @@ input[type="checkbox"]:checked + .question-label + .answer {
 
 
 .faq-container .email-signup{
-    max-width: 100px;
+    width: 40%;
 }
 
 small{
