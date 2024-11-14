@@ -516,3 +516,7 @@ flex-basis: 15px;
 .footer .row{
 align-items: flex-start;
 }
+
+.footer a{
+    color: #454242;
+}
