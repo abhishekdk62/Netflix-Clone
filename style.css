@@ -1,0 +1,518 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    min-height: 100vh;  /* Use min-height to allow flexible height */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/header-image.png);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the header content */
+    align-items: center;     /* Center the header content vertically */
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    padding: 0px 0px;
+    top: 30px;
+    width:100%;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    padding: 7px 20px;
+    color: #fff;
+    cursor: pointer;
+    background: #db0001;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.langbtn {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+
+.langbtn img {
+    height: 5px;
+    margin-left: 8px;
+}
+
+.header-content {
+    position: relative;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.email-signup {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;  /* Control maximum width */
+    margin-top: 20px;
+    overflow: hidden;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.email-signup input {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.email-signup button {
+    padding: 10px 15px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1em;
+    flex-shrink: 0;
+}
+
+.features {
+    font-size: 22px;
+    padding: 50px 12%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+.features h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.faq-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    
+    padding-top: 50px;
+}
+
+.kop {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #000000;
+    margin-bottom: 10px;
+    margin: auto;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+.answer {
+    padding: 10px;
+    background-color: #000000;
+    border: none;
+    margin-top: 10px;
+    width: 70%;
+    text-align: center;
+}
+
+.question-label {
+    background-color: #504c4c;
+    color: white;
+    width: 70%;
+    padding: 15px;
+    font-weight: bold;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.li::after {
+    content: '+';
+    font-size: 34px;
+    position: relative;
+    right: 0px;    /* Vertically center it */
+
+ 
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;  /* Using the Roboto font */
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/header-image.png);
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.langbtn {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+
+.langbtn img {
+    height: 5px;
+    margin-left: 8px;
+}
+
+.header-content {
+    position: relative;
+    margin-top: 15%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;  /* Using the Roboto font */
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;  /* Bold weight */
+    font-family: 'Roboto', sans-serif;  /* Using the Roboto font */
+}
+
+/* Form styling */
+.email-signup {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 80%;                    /* Increase width as needed */
+    max-width: 500px;              /* Set a max-width if desired */
+    margin-top: 20px;
+    overflow: hidden;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+/* Input field styling */
+.email-signup input {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    flex: 1;                       /* Makes input take up available space */
+    min-width: 0;                  /* Prevents overflow */
+    box-sizing: border-box;
+}
+
+/* Button styling */
+.email-signup button {
+    padding: 10px 15px;
+    background-color: #e50914;     /* Netflix red */
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;    /* Round only the right corners */
+    cursor: pointer;
+    font-size: 1em;
+    flex-shrink: 0;                /* Keeps button from shrinking */
+}
+
+.features {
+    font-size: 22px;
+    padding: 50px 12%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+.features h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.faq-container {
+    align-items: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kop {
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #000000;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+
+
+.question-label {
+    position: relative;
+    background-color: #454242; /* Added background color */
+    color: white;
+    width: 70%;
+    padding: 15px;
+    
+    font-weight: bold;
+    display: block; /* Ensure it takes up the full width */
+    transition: background-color 0.3s;
+}
+.question-label::after {
+    content: ' +';
+    font-size: 34px;
+    color: white;  /* You can change the color if needed */
+    position: absolute;
+    right: 20px;  /* Adjust this value to place it at the end */
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+input[type=checkbox] {
+    display: none;
+}
+/* Hide the answers by default */
+.answer {
+    display: none;  /* Answers are hidden initially */
+    padding: 10px;
+    background-color: #000000;
+    border: none;
+    margin-top: 10px;
+    width: 70%;
+    text-align: center;
+}
+
+/* Show the answer when the checkbox is checked */
+input[type="checkbox"]:checked + .question-label + .answer {
+    display: block;  /* Display answer when checkbox is checked */
+}
+.faq-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column; /* Ensure items stack vertically */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%; /* Ensure the list uses full width available */
+}
+
+li {
+    background-color: #000000;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    width: 70%;  /* Ensure the label stays at 70% width */
+}
+
+.question-label {
+    position: relative;
+    background-color: #454242;
+    color: white;
+    width: 70%;  /* Keep the width fixed at 70% */
+    padding: 15px;
+    font-weight: bold;
+    display: block;
+    transition: background-color 0.3s;
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+.question-label::after {
+    content: ' +';
+    font-size: 34px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* Hide the answers by default */
+.answer {
+    display: none;
+    padding: 10px;
+    background-color: #000000;
+    border: none;
+    margin-top: 10px;
+    width: 70%;
+    text-align: center;
+}
+
+/* Show the answer when the checkbox is checked */
+input[type="checkbox"]:checked + .question-label + .answer {
+    display: block;
+}
+
+
+.faq-container .email-signup{
+    max-width: 100px;
+}
+
+small{
+    font-size: 13px;
+}
+
+
+.footer{
+    padding:40px 70px ;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    border-top: 6px solid #333;
+}
+
+.footer h2{
+    font-size:15px;
+    font-weight: 800;
+    color: #333;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.footer .col{
+flex-grow: 1;
+flex-basis: 15px;
+
+}
+.footer .col a{
+    font-size: 15px;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    padding: 7px 50px;
+}
+.footer .row{
+align-items: flex-start;
+}
