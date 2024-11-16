@@ -1,7 +1,7 @@
 body {
     background-color: rgb(0, 0, 0);
     color: aliceblue;
-    font-family: 'Roboto', sans-serif;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -10,15 +10,11 @@ body {
 
 .header {
     width: 100%;
-    min-height: 100vh;  /* Use min-height to allow flexible height */
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/header-image.png);
     background-size: cover;
     position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center the header content */
-    align-items: center;     /* Center the header content vertically */
-    text-align: center;
+    justify-content: center;
 }
 
 nav {
@@ -26,7 +22,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    padding: 0px 0px;
+    padding: 7px 10px;
     top: 30px;
     width:100%;
 }
@@ -62,9 +58,12 @@ nav button {
 }
 
 .header-content {
+    height: auto;
+    width: auto;
     position: relative;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    padding: 20px;
 }
 
 .header-content h1 {
@@ -81,7 +80,6 @@ nav button {
     max-width: 500px;  /* Control maximum width */
     margin-top: 20px;
     overflow: hidden;
-    background: #fff;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
@@ -458,22 +456,24 @@ label {
 input[type=checkbox] {
     display: none;
 }
-
-/* Hide the answers by default */
 .answer {
-    display: none;
-    padding: 10px;
+    max-height: 0; /* Collapse the answer by default */
+    overflow: hidden; /* Hide content when max-height is too small */
+    padding: 0; /* Remove padding initially */
     background-color: #000000;
     border: none;
     margin-top: 10px;
     width: 70%;
     text-align: center;
+    color: white; /* Ensure the text is visible */
+    transition: max-height 0.5s ease, padding 0.5s ease;
 }
 
-/* Show the answer when the checkbox is checked */
 input[type="checkbox"]:checked + .question-label + .answer {
-    display: block;
+    max-height: 200px; /* Set a high enough value to reveal content */
+    padding: 10px; /* Add padding smoothly */
 }
+
 
 
 .faq-container .email-signup{
@@ -491,6 +491,8 @@ small{
     display: flex;
     flex-direction: row;
     border-top: 6px solid #333;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .footer h2{
@@ -519,4 +521,77 @@ align-items: flex-start;
 
 .footer a{
     color: #454242;
+}
+.footer2{
+    width: 85%;
+    margin: auto;
+    height: 200px;
+}
+.lang-select{
+    align-items: center;
+    width: 110px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid white;
+    gap: 5px;
+}
+
+.footer2 .lang-select span{
+color: white;
+font-size: 16px;
+
+}
+select{
+    color:white;
+background-color: black;
+outline: none;
+border: none;
+font-size: 16px;
+}
+
+.newsighnup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin-top: 20px;
+    overflow: hidden;
+   
+    padding: 0;
+    gap: 5px;
+}
+    .newsighnup input {
+        background-color: #000000;
+        color: white;
+        width: 400px;
+        padding: 10px;
+        font-size: 1em;
+        flex: 1;
+        border:1px solid #868080;
+        outline:1px solid rgb(141,136, 136) ;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    .newsighnup button {
+        border-radius: 5px;
+        padding: 10px 15px;
+        background-color: #e50914;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1em;
+        flex-shrink: 0;
+    }
+
+#small{
+    font-size: 16px;
+    font-weight: 100;
+    color: #6f6b6b;
+    padding-top: 20px;
+
+    
 }
